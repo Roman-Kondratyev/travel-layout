@@ -1,0 +1,212 @@
+$grey-color: #7D7987;
+$orange-color: #FB8F1D;
+$black-color: #202336;
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    font-style: normal;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    @extend %flex;
+    padding: 30px 0;
+
+    .logo {
+        background-image: url(./img/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 41px;
+        height: 41px;
+    }
+}
+
+header nav {
+    @extend %flex;
+    width: 600px;
+
+    p:first-child {
+        font: 500 16px 'Inter';
+        color: $black-color;
+    }
+
+    p {
+        font: 400 16px 'Inter';
+        color: $grey-color;
+    }
+
+    .btn-log {
+        border: 1px solid $orange-color;
+        border-radius: 8px;
+        width: 132px;
+        text-align: center;
+        padding: 20px 0;
+        font: 500 15px 'Inter';
+        color: #FB8F1D;
+    }
+
+    .btn-reg {
+        background: $orange-color;
+        border-radius: 8px;
+        font: 500 15px 'Inter';
+        text-align: center;
+        padding: 20px 0;
+        width: 132px;
+        color: #FFFFFF;
+    }
+}
+
+main {
+    margin-top: 110px;
+
+    .preview {
+        @extend %flex;
+        margin-bottom: 110px;
+    }
+
+    .preview-form {
+        h1 {
+            font: 700 64px 'Playfair Display';
+            color: $black-color;
+            margin-bottom: 74px;
+        }
+
+        h3 {
+            font: 600 22px 'Inter';
+            color: $black-color;
+            margin-bottom: 71px;
+        }
+
+        .input-form {
+            display: grid;
+            grid-template-columns: 220px 220px;
+            grid-column-gap: 15px;
+            grid-row-gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        input {
+            width: 220px;
+            height: 52px;
+            border: 0.8px solid #AFB0B9;
+            border-radius: 6px;
+        }
+
+        input::placeholder {
+            font: 400 15px 'Inter';
+            color: #4A4C53;
+            padding-left: 30px;
+        }
+
+        .preview-btm {
+            background: $orange-color;
+            border-radius: 8px;
+            width: 180px;
+            font: 700 17px 'Inter';
+            color: #FFFFFF;
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+
+    .preview-img {
+        background-image: url(./img/preview\ \(2\).svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 506px;
+        width: 483px;
+    }
+
+    .travel {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .travel-img {
+        background-image: url(./img/Travel.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 650px;
+        width: 524px;
+    }
+
+    .travel-info {
+        width: 480px;
+
+        h1 {
+            font: 700 36px 'Playfair Display';
+            color: $black-color;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font: 300 17px 'Inter';
+            color: $grey-color;
+            margin-bottom: 40px;
+        }
+
+        .travel-btm{
+            background: $orange-color;
+            border-radius: 8px;
+            width: 180px;
+            font: 700 17px 'Inter';
+            color: #FFFFFF;
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    .ftr {
+        width: 390px;
+
+        .logo-footer {
+            background-image: url(./img/footer.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 37px;
+            height: 44px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font: 300 18px 'Inter';
+            color: $grey-color;
+            margin-bottom: 40px;
+        }
+    }
+
+    .nav {
+        h3 {
+            font: 700 19px 'Inter';
+            color: $black-color;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font: 300 18px 'Inter';
+            color: $grey-color;
+            margin-bottom: 10px;
+        }
+    }
+}

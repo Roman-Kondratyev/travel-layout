@@ -1,0 +1,210 @@
+main .preview, header nav, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 30px 0;
+}
+header .logo {
+  background-image: url(./img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 41px;
+  height: 41px;
+}
+
+header nav {
+  width: 600px;
+}
+header nav p:first-child {
+  font: 500 16px "Inter";
+  color: #202336;
+}
+header nav p {
+  font: 400 16px "Inter";
+  color: #7D7987;
+}
+header nav .btn-log {
+  border: 1px solid #FB8F1D;
+  border-radius: 8px;
+  width: 132px;
+  text-align: center;
+  padding: 20px 0;
+  font: 500 15px "Inter";
+  color: #FB8F1D;
+}
+header nav .btn-reg {
+  background: #FB8F1D;
+  border-radius: 8px;
+  font: 500 15px "Inter";
+  text-align: center;
+  padding: 20px 0;
+  width: 132px;
+  color: #FFFFFF;
+}
+
+main {
+  margin-top: 110px;
+}
+main .preview {
+  margin-bottom: 110px;
+}
+main .preview-form h1 {
+  font: 700 64px "Playfair Display";
+  color: #202336;
+  margin-bottom: 74px;
+}
+main .preview-form h3 {
+  font: 600 22px "Inter";
+  color: #202336;
+  margin-bottom: 71px;
+}
+main .preview-form .input-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 15px 220px;
+  grid-template-columns: 220px 220px;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  margin-bottom: 50px;
+}
+main .preview-form input {
+  width: 220px;
+  height: 52px;
+  border: 0.8px solid #AFB0B9;
+  border-radius: 6px;
+}
+main .preview-form input::-webkit-input-placeholder {
+  font: 400 15px "Inter";
+  color: #4A4C53;
+  padding-left: 30px;
+}
+main .preview-form input::-moz-placeholder {
+  font: 400 15px "Inter";
+  color: #4A4C53;
+  padding-left: 30px;
+}
+main .preview-form input:-ms-input-placeholder {
+  font: 400 15px "Inter";
+  color: #4A4C53;
+  padding-left: 30px;
+}
+main .preview-form input::-ms-input-placeholder {
+  font: 400 15px "Inter";
+  color: #4A4C53;
+  padding-left: 30px;
+}
+main .preview-form input::placeholder {
+  font: 400 15px "Inter";
+  color: #4A4C53;
+  padding-left: 30px;
+}
+main .preview-form .preview-btm {
+  background: #FB8F1D;
+  border-radius: 8px;
+  width: 180px;
+  font: 700 17px "Inter";
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+main .preview-img {
+  background-image: url(./img/preview\ \(2\).svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 506px;
+  width: 483px;
+}
+main .travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+main .travel-img {
+  background-image: url(./img/Travel.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 650px;
+  width: 524px;
+}
+main .travel-info {
+  width: 480px;
+}
+main .travel-info h1 {
+  font: 700 36px "Playfair Display";
+  color: #202336;
+  margin-bottom: 20px;
+}
+main .travel-info p {
+  font: 300 17px "Inter";
+  color: #7D7987;
+  margin-bottom: 40px;
+}
+main .travel-info .travel-btm {
+  background: #FB8F1D;
+  border-radius: 8px;
+  width: 180px;
+  font: 700 17px "Inter";
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .ftr {
+  width: 390px;
+}
+footer .ftr .logo-footer {
+  background-image: url(./img/footer.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 37px;
+  height: 44px;
+  margin-bottom: 20px;
+}
+footer .ftr p {
+  font: 300 18px "Inter";
+  color: #7D7987;
+  margin-bottom: 40px;
+}
+footer .nav h3 {
+  font: 700 19px "Inter";
+  color: #202336;
+  margin-bottom: 20px;
+}
+footer .nav p {
+  font: 300 18px "Inter";
+  color: #7D7987;
+  margin-bottom: 10px;
+}
